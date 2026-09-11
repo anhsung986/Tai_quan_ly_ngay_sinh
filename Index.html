@@ -3,58 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tải App Quản lý ngày sinh</title>
+    <title>Tải Quản lý ngày sinh App</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            text-align: center;
-            padding: 50px 20px;
-            color: #333;
-        }
-        .container {
-            background: #fff;
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: auto;
-        }
-        h1 {
-            color: #007bff;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-        .btn {
-            display: inline-block;
-            background: #28a745;
-            color: white;
-            padding: 14px 25px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: bold;
-            box-shadow: 0px 4px 6px rgba(40, 167, 69, 0.3);
-            transition: background 0.2s;
-        }
-        .btn:hover {
-            background: #218838;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .container { background: white; border-radius: 24px; padding: 35px 25px; width: 100%; max-width: 380px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); text-align: center; }
+        .app-icon { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); object-fit: cover; }
+        h1 { font-size: 24px; color: #1e293b; font-weight: 700; margin-bottom: 6px; }
+        .subtitle { font-size: 14px; color: #64748b; margin-bottom: 24px; }
+        .btn-download { display: flex; align-items: center; justify-content: center; gap: 10px; background: #2563eb; color: white; text-decoration: none; padding: 16px; border-radius: 16px; font-weight: 600; font-size: 16px; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35); transition: all 0.2s ease; }
+        .btn-download:active { transform: scale(0.98); }
+        .info-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 16px; margin-top: 24px; text-align: left; }
+        .info-title { font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+        .steps { padding-left: 20px; font-size: 13px; color: #475569; line-height: 1.6; }
+        .steps li { margin-bottom: 6px; }
+
+        details { margin-top: 12px; background: #ffffff; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 10px 12px; }
+        summary { font-size: 12px; font-weight: 600; color: #dc2626; cursor: pointer; outline: none; }
+        .protect-steps { margin-top: 8px; padding-left: 18px; font-size: 12px; color: #475569; line-height: 1.5; }
+        .protect-steps li { margin-bottom: 4px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Quản lý ngày sinh</h1>
-        <p>Ứng dụng quản lý ngày sinh cá nhân tiện lợi trên Android.</p>
-        
-        <!-- Nút tải file APK trực tiếp -->
-        <a href="Quanlyngaysinh.apk" class="btn" download>📥 Tải xuống APK</a>
+
+<div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png" alt="App Icon" class="app-icon">
+    <h1>Chi Đội App</h1>
+    <p class="subtitle">Ứng dụng Android chính thức • Phiên bản mới nhất</p>
+
+    <!-- Đã sửa đúng tên file thành Chidoi.apk -->
+    <a href="https://github.com/anhsung986/quan_ly_ngay_sinh/releases/latest/download/Quanlyngaysinh.apk" class="btn-download">
+        <span>📥</span> Tải APK Trực Tiếp
+    </a>
+
+    <div class="info-box">
+        <div class="info-title">📌 Hướng dẫn cài nhanh:</div>
+        <ol class="steps">
+            <li>Bấm nút <b>Tải APK Trực Tiếp</b> ở trên.</li>
+            <li>Mở file <b>Quanlyngaysinh.apk.apk</b> vừa tải về.</li>
+            <li>Nếu bị chặn: Chọn <b>Cho phép từ nguồn này</b> hoặc tạm tắt <b>Play Protect</b> trong CH Play.</li>
+            <li>Nhấn <b>Cài đặt</b> để hoàn tất.</li>
+        </ol>
+
+        <details>
+            <summary>🛡️ Xem cách tắt Play Protect (nếu bị chặn)</summary>
+            <ol class="protect-steps">
+                <li>Mở <b>CH Play</b> ➔ Bấm vào <b>Avatar tài khoản</b> góc trên bên phải.</li>
+                <li>Chọn <b>Play Protect</b>.</li>
+                <li>Bấm vào <b>Cài đặt ⚙️</b> ở góc trên bên phải.</li>
+                <li>Gạt công tắc tại <b>Quét ứng dụng bằng Play Protect</b> để tắt.</li>
+                <li>Bấm <b>Tắt</b> (hoặc Tạm dừng) để xác nhận.</li>
+            </ol>
+        </details>
     </div>
+</div>
+
 </body>
 </html>
-
